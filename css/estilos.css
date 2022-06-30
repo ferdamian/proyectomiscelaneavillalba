@@ -1,0 +1,657 @@
+/* Estilos generales*/
+/*-------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,400;8..144,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Flex", sans-serif;
+  box-sizing: border-box;
+}
+
+/*Google Fonts*/
+.bordeTemporal {
+  border: 5px solid purple;
+  margin: 5px;
+}
+
+/*Variables*/ /* BODY */
+body {
+  background-image: url("../imagenes/backgroundNosotros.png");
+  width: 100%;
+  height: 100vh;
+}
+
+/*ESTILOS HEADER*/
+header {
+  background-color: rgb(0, 0, 0);
+}
+
+.centrarImagenHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* nav styles*/
+/*--------------------------*/
+.estiloNav {
+  background-color: rgb(0, 0, 0);
+  border: solid white 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.estiloNavProductos {
+  background-color: rgb(0, 0, 0);
+  border: solid white 2px;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  border-bottom: solid 2px red;
+}
+
+/* ASIDE*/
+.columnaProductos {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+aside {
+  background-color: rgb(0, 0, 0);
+  margin: 1%;
+  padding: 10%;
+}
+
+.aColumn {
+  background-color: white;
+  text-align: center;
+  margin: 8%;
+  padding: 5%;
+}
+
+span:hover {
+  border-bottom: solid 2px red;
+}
+
+/*ESTILOS MAIN*/
+.margenes {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.contenidoNosotros {
+  width: 100%;
+  height: 100%;
+}
+
+/*AJUSTAR NOSOTROS*/
+.ajustar {
+  margin-bottom: 450px;
+}
+
+/* MAPA*/
+.mapaImg {
+  width: 75%;
+  height: 75%;
+  border: solid 10px green;
+}
+
+.centrarMapaContacto {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.centrarMapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*ESTILOS LOGO*/
+.logoImg {
+  width: 65%;
+}
+
+.centrarLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*ESTILOS REDES SOCIALES*/
+.imagenRedes {
+  width: 30%;
+}
+
+.centrarRedes {
+  margin: 20%;
+  align-items: center;
+  justify-content: center;
+}
+
+.centrarImagenRedes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centrarRedesSociales {
+  display: flex;
+  align-items: center;
+}
+
+.sacarGutter {
+  --bs-gutter-x: 0rem;
+}
+
+.noPadding {
+  padding: 0%;
+}
+
+/*NOWRAP REDES*/
+.sacarwrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* ESTILOS LETRAS*/
+h2 {
+  text-align: center;
+  padding: 2%;
+  margin: 1%;
+}
+
+h4 {
+  text-align: center;
+}
+
+.centrarTitulo {
+  text-align: center;
+  margin-top: 3%;
+}
+
+/* ESTILOS FOOTER*/
+footer {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*responsive*/
+/*Nombre de areas*/
+.cabeza {
+  grid-area: cabeza;
+}
+
+.topMenu {
+  grid-area: topMenu;
+}
+
+.columna {
+  grid-area: columna;
+}
+
+.contenido {
+  grid-area: contenido;
+}
+
+.botMenu {
+  grid-area: botMenu;
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.mapa {
+  grid-area: mapa;
+}
+
+.redesSociales {
+  grid-area: redesSociales;
+}
+
+.pie {
+  grid-area: pie;
+}
+
+/*
+///////////////////////////////
+/// RESPONSIVE DESKPOT/////////
+/// ///////////////////////////
+*/
+@media (min-width: 1024px) {
+  /* Areas de Index*/
+  .gridAreaIndex {
+    display: grid;
+    grid-template-areas: "cabeza cabeza cabeza" "topMenu topMenu topMenu" "contenido contenido contenido" "logo mapa redesSociales" "pie pie pie";
+    grid-template-rows: 3fr 1fr 6fr 4fr 1fr;
+    grid-template-columns: 20% 30% auto;
+  }
+  /* Areas de Nosotros*/
+  .gridAreaNosotros {
+    display: grid;
+    grid-template-areas: "cabeza cabeza cabeza" "topMenu topMenu topMenu" "contenido contenido contenido" "logo mapa redesSociales" "pie pie pie";
+    grid-template-rows: 2fr 1fr 4fr 2fr 1fr;
+    grid-template-columns: 20% 30% auto;
+  }
+  /*Areas de Productos*/
+  .gridAreaProductos {
+    display: grid;
+    grid-template-areas: "cabeza cabeza cabeza" "topMenu topMenu topMenu" "columna contenido contenido" "botMenu botMenu botMenu" "logo mapa redesSociales" "pie pie pie";
+    grid-template-rows: 2fr 1fr 5fr 1fr 2fr 1fr;
+    grid-template-columns: 20% 30% auto;
+  }
+  /*Areas de Contacto*/
+  .gridAreaContacto {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "topMenu topMenu" "contenido contenido" "logo redesSociales" "pie pie";
+    grid-template-rows: 3fr 1fr 6fr 2fr 1fr;
+    grid-template-columns: 20% auto;
+  }
+  /*Areas de Tienda*/
+  .gridAreaTienda {
+    display: grid;
+    grid-template-areas: "cabeza cabeza cabeza" "topMenu topMenu topMenu" "contenido contenido contenido" "logo mapa redesSociales" "pie pie pie";
+    grid-template-rows: 3fr 1fr 6fr 2fr 1fr;
+    grid-template-columns: 20% 30% auto;
+  }
+  /* NAV */
+  .menuNavegacion {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+  .menuNavegacionProductos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .estiloNavProductos {
+    display: flex;
+    justify-content: center;
+    /* height: 50%;*/
+  }
+  .estiloLi {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-right: 10%;
+  }
+  .mostrarCarrouselDos {
+    display: none;
+  }
+  /* PRODUCTOS*/
+  .centrarImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*Flexs styles---------------*/
+  .todosProductosFlex {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .productoFlex {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: right;
+  }
+  /*Grid Areas producto Meeples*/
+  .gridAreasProductoMeeples {
+    display: grid;
+    grid-template-areas: "textoUno imagenColumna" "textoDos imagenColumna";
+    grid-template-columns: 50% 50%;
+  }
+  /*Grid Areas procuto Tokens*/
+  .gridAreasProductoTokens {
+    display: grid;
+    grid-template-areas: "textoUno imagenColumna" "textoDos imagenColumna" "textoTres imagenColumna";
+    grid-template-columns: 50% 50%;
+  }
+  .textoUno {
+    grid-area: textoUno;
+  }
+  .textoDos {
+    grid-area: textoDos;
+  }
+  .textoTres {
+    grid-area: textoTres;
+  }
+  .imagenColumna {
+    grid-area: imagenColumna;
+  }
+}
+/*
+///////////////////////////////
+/// RESPONSIVE TABLET /////////
+/// ///////////////////////////
+*/
+@media (min-width: 481px) and (max-width: 1023px) {
+  /*Areas de Index*/
+  .gridAreaIndex {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "topMenu contenido" "mapa contenido" "logo redesSociales" "pie pie";
+    grid-template-rows: 2fr 3fr 3fr 2fr 1fr;
+    grid-template-columns: 30% auto;
+  }
+  /*Areas de Nosotros*/
+  .gridAreaNosotros {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "topMenu contenido" "mapa contenido" "logo redesSociales" "pie pie";
+    grid-template-rows: 2fr 4fr 3fr 3fr 1fr;
+    grid-template-columns: 25% auto;
+  }
+  /*Areas de Productos*/
+  .gridAreaProductos {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "topMenu topMenu" "columna contenido" "botMenu botMenu" "redesSociales redesSociales" "logo mapa" "pie pie";
+    grid-template-rows: 3fr 1fr 4fr 3fr 1fr 3fr 1fr;
+    grid-template-columns: 25% auto;
+  }
+  /*Areas de Contactos*/
+  .gridAreaContacto {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "topMenu contenido" "topMenu contenido" "logo redesSociales" "pie pie";
+    grid-template-rows: 2fr 4fr 3fr 3fr 1fr;
+    grid-template-columns: 25% auto;
+  }
+  /*Areas de Tienda*/
+  .gridAreaTienda {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "topMenu contenido" "mapa contenido" "logo redesSociales" "pie pie";
+    grid-template-rows: 2fr 4fr 3fr 3fr 1fr;
+    grid-template-columns: 25% auto;
+  }
+  /* MAIN*/
+  .centrarCarrousel {
+    display: flex;
+    align-items: center;
+  }
+  .mostrarCarrouselUno {
+    display: none;
+  }
+  .ajustarRedesNosotros {
+    margin-top: 400px;
+  }
+  /* NAV*/
+  .estiloNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pruebacarrousel {
+    height: 100%;
+  }
+  .pruebacarrouseldos {
+    margin-top: 100px;
+  }
+  .texto {
+    margin-top: 50px;
+    padding: 2%;
+    margin-left: 1%;
+  }
+  .estiloNavProductos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menuNavegacion {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0%;
+  }
+  .menuNavegacionProductos {
+    display: flex;
+    justify-content: center;
+  }
+  .estiloLi {
+    list-style-type: none;
+    font-size: 130%;
+    margin-right: 2%;
+    margin-top: 2%;
+  }
+  /* PRODUCTOS*/
+  .centrarImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*Flexs styles---------------*/
+  .todosProductosFlex {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .productoFlex {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: right;
+  }
+  .padding {
+    padding: 0;
+  }
+  .textoUno {
+    grid-area: textoUno;
+  }
+  .textoDos {
+    grid-area: textoDos;
+  }
+  .textoTres {
+    grid-area: textoTres;
+  }
+  .imagenColumna {
+    grid-area: imagenColumna;
+  }
+  .ImgCajitas {
+    width: 10%;
+  }
+  .productoImgSmarthphoneCaja {
+    width: 100%;
+  }
+  .productoImgSmarthphoneEspacioCaja {
+    width: 60%;
+  }
+  .productoImgSmarthphoneDescripcionCaja {
+    width: 100%;
+  }
+  .productoImgSmarthphoneNaipes {
+    width: 100%;
+  }
+  .productoImgSmarthphoneDescripcionNaipes {
+    width: 90%;
+  }
+  .productoImgSmarthphoneTableros {
+    width: 100%;
+  }
+  .productoImgSmarthphoneDescripcionTableros {
+    width: 70%;
+  }
+  .productoImgSmarthphoneMeeples {
+    width: 100%;
+  }
+  .productoImgSmarthphoneTokens {
+    width: 100%;
+  }
+  .logoIndex {
+    width: 80%;
+  }
+}
+/*
+///////////////////////////////
+/// RESPONSIVE SMARTHPHONE ////
+/// ///////////////////////////
+*/
+/*SMARTPHONE*/
+@media (max-width: 480px) {
+  /* Areas de Index*/
+  .gridAreaIndex {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "topMenu topMenu" "contenido contenido" "redesSociales redesSociales" "logo mapa" "pie pie";
+    grid-template-rows: 2fr 1fr 4fr 2fr 2fr 1fr;
+    grid-template-columns: 40% auto;
+  }
+  /* Areas de Nosotros*/
+  .gridAreaNosotros {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "topMenu topMenu" "contenido contenido" "redesSociales redesSociales" "logo mapa" "pie pie";
+    grid-template-rows: 2fr 1fr 4fr 2fr 2fr 1fr;
+    grid-template-columns: 50% auto;
+  }
+  /* Areas de Productos*/
+  .gridAreaProductos {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "topMenu topMenu" "columna columna" "contenido contenido" "botMenu botMenu" "redesSociales redesSociales" "logo mapa" "pie pie";
+    grid-template-rows: 4fr 1fr 1fr 6fr 2fr 3fr 2fr 1fr;
+    grid-template-columns: 40% auto;
+  }
+  /* Areas de Contactos*/
+  .gridAreaContacto {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "topMenu topMenu" "contenido contenido" "redesSociales redesSociales" "logo logo" "pie pie";
+    grid-template-rows: 2fr 1fr 4fr 2fr 1fr 1fr;
+    grid-template-columns: 50% auto;
+  }
+  /* Areas de Tienda*/
+  .gridAreaTienda {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "topMenu topMenu" "contenido contenido" "redesSociales redesSociales" "logo mapa" "pie pie";
+    grid-template-rows: 2fr 1fr 4fr 2fr 2fr 1fr;
+    grid-template-columns: 50% auto;
+  }
+  /* MAIN */
+  .centrarCarrousel {
+    display: flex;
+    align-items: center;
+  }
+  .mostrarCarrouselUno {
+    display: none;
+  }
+  .pruebacarrousel {
+    height: 100%;
+    margin-top: 22px;
+  }
+  /* NAV */
+  .menuNavegacion {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+  }
+  .menuNavegacionProductos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+  .estiloNav {
+    background-color: black;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .estiloNavProductos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .estiloLi {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-right: 16%;
+    width: 12%;
+    font-size: 18px;
+  }
+  /*ASIDE*/
+  .aColumn {
+    margin: 1%;
+    padding: 0;
+  }
+  aside {
+    padding: 0;
+  }
+  /*LOGO*/
+  .logoImg {
+    width: 60%;
+  }
+  .productoImgSmarthphoneCaja {
+    width: 60%;
+  }
+  .productoImgSmarthphoneEspacioCaja {
+    width: 60%;
+  }
+  .productoImgSmarthphoneDescripcionCaja {
+    width: 70%;
+  }
+  .productoImgSmarthphoneNaipes {
+    width: 60%;
+  }
+  .productoImgSmarthphoneDescripcionNaipes {
+    width: 90%;
+  }
+  .productoImgSmarthphoneTableros {
+    width: 60%;
+  }
+  .productoImgSmarthphoneDescripcionTableros {
+    width: 65%;
+  }
+  .productoImgSmarthphoneMeeples {
+    width: 70%;
+  }
+  .productoImgSmarthphoneTokens {
+    width: 60%;
+  }
+  .centrarImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/*animaciones*/
+/* ANIMACIONES*/
+.rebotarTexto {
+  transition: all 1s;
+}
+
+.rebotarTexto:hover {
+  animation-name: rebotar;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.aparecerTextoDerecha {
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes rebotar {
+  25% {
+    transform: rotate(35deg);
+  }
+  50% {
+    transform: rotate(-35deg);
+  }
+  100% {
+    transform: translate(0deg);
+  }
+}
+@keyframes aparecer {
+  from {
+    transform: translatex(50%);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

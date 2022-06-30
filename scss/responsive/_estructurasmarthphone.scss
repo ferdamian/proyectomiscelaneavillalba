@@ -1,0 +1,176 @@
+
+/*
+///////////////////////////////
+/// RESPONSIVE SMARTHPHONE ////
+/// ///////////////////////////
+*/
+
+/*SMARTPHONE*/
+@media (max-width: 480px){
+
+    /* Areas de Index*/ 
+    .gridAreaIndex{
+        display: grid;
+        grid-template-areas:
+        "cabeza cabeza"
+        "topMenu topMenu"
+        "contenido contenido"
+        "redesSociales redesSociales"
+        "logo mapa"
+        "pie pie"
+        ;
+        grid-template-rows: 2fr 1fr 4fr 2fr 2fr 1fr;
+        grid-template-columns: 40% auto;
+    }
+    /* Areas de Nosotros*/
+    .gridAreaNosotros{
+        display: grid;
+        grid-template-areas:
+        "cabeza cabeza"
+        "topMenu topMenu"
+        "contenido contenido"
+        "redesSociales redesSociales"
+        "logo mapa"
+        "pie pie"
+        ;
+        grid-template-rows: 2fr 1fr 4fr 2fr 2fr 1fr;
+        grid-template-columns: 50% auto;
+    }
+    /* Areas de Productos*/
+    .gridAreaProductos{
+        display: grid;
+        grid-template-areas: 
+        "cabeza cabeza"
+        "topMenu topMenu"
+        "columna columna"
+        "contenido contenido"
+        "botMenu botMenu"
+        "redesSociales redesSociales"
+        "logo mapa"
+        "pie pie"
+        ;
+        grid-template-rows: 4fr 1fr 1fr 6fr 2fr 3fr 2fr 1fr;
+        grid-template-columns: 40% auto;
+    }
+    /* Areas de Contactos*/
+    .gridAreaContacto{
+        display: grid;
+        grid-template-areas:
+        "cabeza cabeza"
+        "topMenu topMenu"
+        "contenido contenido"
+        "redesSociales redesSociales"
+        "logo logo"
+        "pie pie"
+        ;
+        grid-template-rows: 2fr 1fr 4fr 2fr 1fr 1fr;
+        grid-template-columns: 50% auto;
+    }
+    /* Areas de Tienda*/
+    .gridAreaTienda{
+        display: grid;
+        grid-template-areas:
+        "cabeza cabeza"
+        "topMenu topMenu"
+        "contenido contenido"
+        "redesSociales redesSociales"
+        "logo mapa"
+        "pie pie"
+        ;
+        grid-template-rows: 2fr 1fr 4fr 2fr 2fr 1fr;
+        grid-template-columns: 50% auto;
+    }
+    /* MAIN */
+    
+    .centrarCarrousel{
+        display: flex;
+        align-items: center;
+    }
+    .mostrarCarrouselUno{
+        display: none;
+    }
+    .pruebacarrousel{
+        height: 100%;
+        margin-top: 22px;
+    }
+    
+    
+    /* NAV */
+    .menuNavegacion {
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: start;
+    }
+    .menuNavegacionProductos{
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    .estiloNav{
+        background-color: black;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .estiloNavProductos{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .estiloLi {
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        margin-right: 16%;
+        width: 12%;
+        font-size: 18px;
+    }
+    /*ASIDE*/
+    .aColumn{
+        margin: 1%;
+        padding: 0;
+    }
+    aside{
+        padding: 0;
+    }
+    /*LOGO*/
+    .logoImg{
+        width: 60%;
+    }
+    
+    .productoImgSmarthphoneCaja{
+        width: 60%;
+    }
+    .productoImgSmarthphoneEspacioCaja{
+        width: 60%;
+    }
+    .productoImgSmarthphoneDescripcionCaja{
+        width: 70%;
+    }
+    .productoImgSmarthphoneNaipes{
+        width: 60%;
+    }
+    .productoImgSmarthphoneDescripcionNaipes{
+        width: 90%;
+    }
+    .productoImgSmarthphoneTableros{
+        width: 60%;
+    }
+    .productoImgSmarthphoneDescripcionTableros{
+        width: 65%;
+    }
+    .productoImgSmarthphoneMeeples{
+        width: 70%;
+    }
+    .productoImgSmarthphoneTokens{
+        width: 60%;
+    }
+    
+    .centrarImg{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    }

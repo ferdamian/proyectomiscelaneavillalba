@@ -1,0 +1,195 @@
+/*
+///////////////////////////////
+/// RESPONSIVE TABLET /////////
+/// ///////////////////////////
+*/
+
+@media (min-width: 481px) and (max-width: 1023px){
+    /*Areas de Index*/ 
+    .gridAreaIndex{
+        display: grid;
+        grid-template-areas:
+        "cabeza cabeza"
+        "topMenu contenido"
+        "mapa contenido"
+        "logo redesSociales"
+        "pie pie"
+        ;
+        grid-template-rows: 2fr 3fr 3fr 2fr 1fr;
+        grid-template-columns: 30% auto;
+    }
+    
+    /*Areas de Nosotros*/
+    .gridAreaNosotros{
+        display: grid;
+        grid-template-areas:
+        "cabeza cabeza"
+        "topMenu contenido"
+        "mapa contenido"
+        "logo redesSociales"
+        "pie pie"
+        ;
+        grid-template-rows: 2fr 4fr 3fr 3fr 1fr;
+        grid-template-columns: 25% auto;
+    }
+    /*Areas de Productos*/
+    .gridAreaProductos{
+        display: grid;
+        grid-template-areas: 
+        "cabeza cabeza"
+        "topMenu topMenu"
+        "columna contenido"
+        "botMenu botMenu"
+        "redesSociales redesSociales"
+        "logo mapa"
+        "pie pie"
+        ;
+        grid-template-rows: 3fr 1fr 4fr 3fr 1fr 3fr 1fr;
+        grid-template-columns: 25% auto;
+    }
+    /*Areas de Contactos*/
+    .gridAreaContacto{
+        display: grid;
+        grid-template-areas:
+        "cabeza cabeza"
+        "topMenu contenido"
+        "topMenu contenido"
+        "logo redesSociales"
+        "pie pie"
+        ;
+        grid-template-rows: 2fr 4fr 3fr 3fr 1fr;
+        grid-template-columns: 25% auto;
+    }
+    /*Areas de Tienda*/
+    .gridAreaTienda{
+        display: grid;
+        grid-template-areas:
+        "cabeza cabeza"
+        "topMenu contenido"
+        "mapa contenido"
+        "logo redesSociales"
+        "pie pie"
+        ;
+        grid-template-rows: 2fr 4fr 3fr 3fr 1fr;
+        grid-template-columns: 25% auto;
+    }
+    /* MAIN*/
+    .centrarCarrousel{
+        display: flex;
+        align-items: center;
+    }
+    .mostrarCarrouselUno{
+        display: none;
+    }
+    .ajustarRedesNosotros{
+        margin-top: 400px;
+    }
+    /* NAV*/
+    .estiloNav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .pruebacarrousel{
+        height: 100%;
+    }
+    .pruebacarrouseldos{
+        margin-top: 100px;
+    }
+    .texto{
+        margin-top: 50px;
+        padding: 2%;
+        margin-left: 1%;
+    }
+    .estiloNavProductos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menuNavegacion {
+        display:flex;
+        flex-flow: column nowrap;
+        padding: 0%;
+    }
+    .menuNavegacionProductos{
+        display:flex;
+        justify-content: center;
+    }
+    .estiloLi {
+        list-style-type: none;
+        font-size: 130%;
+        margin-right: 2%;
+        margin-top: 2%;
+    }
+    
+    /* PRODUCTOS*/
+    .centrarImg{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    /*Flexs styles---------------*/
+    .todosProductosFlex{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    
+    .productoFlex{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: right;
+    }
+    
+    .padding{
+        padding: 0;
+    }
+    
+    .textoUno{
+        grid-area: textoUno;
+    }
+    .textoDos{
+        grid-area: textoDos;
+    }
+    .textoTres{
+        grid-area: textoTres;
+    }
+    .imagenColumna{
+        grid-area: imagenColumna;
+    }
+
+    .ImgCajitas{
+        width: 10%;
+    }
+    .productoImgSmarthphoneCaja{
+        width: 100%;
+    }
+    .productoImgSmarthphoneEspacioCaja{
+        width: 60%;
+    }
+    .productoImgSmarthphoneDescripcionCaja{
+        width: 100%;
+    }
+    .productoImgSmarthphoneNaipes{
+        width: 100%;
+    }
+    .productoImgSmarthphoneDescripcionNaipes{
+        width: 90%;
+    }
+    .productoImgSmarthphoneTableros{
+        width: 100%;
+    }
+    .productoImgSmarthphoneDescripcionTableros{
+        width: 70%;
+    }
+    .productoImgSmarthphoneMeeples{
+        width: 100%;
+    }
+    .productoImgSmarthphoneTokens{
+        width: 100%;
+    }
+    
+    .logoIndex{
+        width: 80%;
+    }
+    
+    }

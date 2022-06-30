@@ -1,0 +1,28 @@
+/*Nombre de areas*/
+.cabeza{
+    grid-area: cabeza;
+}
+.topMenu{
+    grid-area: topMenu;
+}
+.columna{
+    grid-area: columna;
+}
+.contenido{
+    grid-area: contenido;
+}
+.botMenu{
+    grid-area: botMenu;
+}
+.logo{
+    grid-area: logo;
+}
+.mapa{
+    grid-area: mapa;
+}
+.redesSociales{
+    grid-area: redesSociales;
+}
+.pie{
+    grid-area: pie;
+}

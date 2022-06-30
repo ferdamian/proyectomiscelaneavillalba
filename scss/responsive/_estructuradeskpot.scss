@@ -1,0 +1,152 @@
+
+/*
+///////////////////////////////
+/// RESPONSIVE DESKPOT/////////
+/// ///////////////////////////
+*/
+
+@media (min-width: 1024px){
+    /* Areas de Index*/ 
+   .gridAreaIndex{
+       display: grid;
+       grid-template-areas:
+       "cabeza cabeza cabeza"
+       "topMenu topMenu topMenu"
+       "contenido contenido contenido"
+       "logo mapa redesSociales"
+       "pie pie pie"
+       ;
+       grid-template-rows: 3fr 1fr 6fr 4fr 1fr;
+       grid-template-columns: 20% 30% auto;
+   }
+   /* Areas de Nosotros*/ 
+   .gridAreaNosotros{
+       display: grid;
+       grid-template-areas:
+       "cabeza cabeza cabeza"
+       "topMenu topMenu topMenu"
+       "contenido contenido contenido"
+       "logo mapa redesSociales"
+       "pie pie pie"
+       ;
+       grid-template-rows: 2fr 1fr 4fr 2fr 1fr;
+       grid-template-columns: 20% 30% auto;
+   }
+   /*Areas de Productos*/
+   .gridAreaProductos{
+       display: grid;
+       grid-template-areas: 
+       "cabeza cabeza cabeza"
+       "topMenu topMenu topMenu"
+       "columna contenido contenido"
+       "botMenu botMenu botMenu"
+       "logo mapa redesSociales"
+       "pie pie pie"
+       ;
+       grid-template-rows: 2fr 1fr 5fr 1fr 2fr 1fr;
+       grid-template-columns: $col1 $col2 $col3;
+   }
+   /*Areas de Contacto*/
+   .gridAreaContacto{
+       display: grid;
+       grid-template-areas:
+       "cabeza cabeza"
+       "topMenu topMenu"
+       "contenido contenido"
+       "logo redesSociales"
+       "pie pie"
+       ;
+       grid-template-rows: 3fr 1fr 6fr 2fr 1fr;
+       grid-template-columns: 20% auto;
+   }
+   /*Areas de Tienda*/
+   .gridAreaTienda{
+       display: grid;
+       grid-template-areas:
+       "cabeza cabeza cabeza"
+       "topMenu topMenu topMenu"
+       "contenido contenido contenido"
+       "logo mapa redesSociales"
+       "pie pie pie"
+       ;
+       grid-template-rows: 3fr 1fr 6fr 2fr 1fr;
+       grid-template-columns: $col1 $col2 $col3;
+   }
+   /* NAV */
+   .menuNavegacion{
+       display:flex;
+       flex-flow: row nowrap;
+       justify-content: center;  
+   }
+   .menuNavegacionProductos{
+       display:flex;
+       flex-flow: row nowrap;
+       justify-content: center;
+       align-items: center;
+       
+   }
+   .estiloNavProductos{
+      display: flex;
+      justify-content: center;
+      /* height: 50%;*/
+   }
+   .estiloLi {
+       list-style-type: none;
+       display: flex;
+       align-items: center;
+       font-size: 20px;
+       margin-right: 10%;
+   }
+   .mostrarCarrouselDos{
+       display: none;
+   }
+   /* PRODUCTOS*/
+   .centrarImg{
+       display: flex;
+       flex-direction: column;
+       align-items: center; 
+   }
+   /*Flexs styles---------------*/
+   .todosProductosFlex{
+       display: flex;
+       flex-flow: column wrap;
+   }
+   
+   .productoFlex{
+       display: flex;
+       flex-flow: column nowrap;
+       align-items: right;
+   }
+   /*Grid Areas producto Meeples*/
+   .gridAreasProductoMeeples{
+       display: grid;
+       grid-template-areas: 
+       "textoUno imagenColumna"
+       "textoDos imagenColumna"
+       ;
+       grid-template-columns: 50% 50%;
+   }
+   /*Grid Areas procuto Tokens*/
+   .gridAreasProductoTokens{
+       display: grid;
+       grid-template-areas: 
+       "textoUno imagenColumna"
+       "textoDos imagenColumna"
+       "textoTres imagenColumna"
+       ;
+       grid-template-columns: 50% 50%;
+   }
+   .textoUno{
+       grid-area: textoUno;
+   }
+   .textoDos{
+       grid-area: textoDos;
+   }
+   .textoTres{
+       grid-area: textoTres;
+   }
+   .imagenColumna{
+       grid-area: imagenColumna;
+   }
+  
+   }

@@ -1,0 +1,156 @@
+/* BODY */
+body{
+    background-image:url("../imagenes/backgroundNosotros.png");
+    width: 100%;
+    height: 100vh;
+}
+
+/*ESTILOS HEADER*/
+header{
+    background-color: $colorPrimario;
+}
+.centrarImagenHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* nav styles*/
+/*--------------------------*/
+.estiloNav{
+    background-color: $colorPrimario;
+    border: solid $colorSecundario 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.estiloNavProductos{
+    background-color: $colorPrimario;
+    border: solid $colorSecundario 2px;
+}
+
+a {
+    text-decoration: none;
+    &:hover{
+        border-bottom: solid 2px $colorTerciario;
+    }
+}
+
+/* ASIDE*/
+
+.columnaProductos {
+    display: flex;
+    flex-flow: column wrap;
+}
+aside {
+    background-color: $colorPrimario;
+    margin: 1%;
+    padding: 10%;
+}
+.aColumn{
+    background-color: $colorSecundario;
+    text-align:center;
+    margin: 8%;
+    padding: 5%;
+}
+span:hover{
+    border-bottom: solid 2px $colorTerciario;
+}
+
+/*ESTILOS MAIN*/
+
+.margenes{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.contenidoNosotros{
+    width: 100%;
+    height: 100%;
+}
+
+/*AJUSTAR NOSOTROS*/
+.ajustar{
+    margin-bottom: 450px;
+}  
+
+/* MAPA*/
+.mapaImg{
+    width: 75%;
+    height: 75%;
+    border: solid 10px green;
+}
+.centrarMapaContacto{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+.centrarMapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*ESTILOS LOGO*/
+.logoImg{
+    width: 65%;
+}
+.centrarLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*ESTILOS REDES SOCIALES*/
+.imagenRedes{
+    width: 30%;
+}
+.centrarRedes{
+    margin: 20%;
+    align-items: center;
+    justify-content: center;
+}
+.centrarImagenRedes{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.centrarRedesSociales{
+    display: flex;
+    align-items: center;
+}
+
+.sacarGutter{
+    --bs-gutter-x: 0rem;
+}
+.noPadding{
+    padding: 0%;
+}
+
+/*NOWRAP REDES*/
+.sacarwrap{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* ESTILOS LETRAS*/
+h2{
+    text-align: center;
+    padding: 2%;
+    margin: 1%;
+}
+h4{
+    text-align: center;
+}
+.centrarTitulo{
+    text-align: center;
+    margin-top: 3%;
+}
+
+/* ESTILOS FOOTER*/
+
+footer {
+    background-color: $colorPrimario;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }

@@ -1,0 +1,26 @@
+/* ANIMACIONES*/
+.rebotarTexto{
+    transition: all 1s;
+}
+.rebotarTexto:hover {
+    animation-name: rebotar;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.aparecerTextoDerecha{
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes rebotar {
+    0%{}
+    25%{transform: rotate(35deg);}
+    50%{transform: rotate(-35deg);}
+    100%{transform: translate(0deg);}
+}
+
+@keyframes aparecer {
+    from{transform: translatex(50%);}
+    to{transform: translate(0);}
+}
